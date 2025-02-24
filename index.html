@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reading Log</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/favicon-close.png" type="image/png">
+</head>
+<body>
+<div class="container">
+    <h1>My Reading Log</h1>
+    <p class="author-text modern-font" style="font-size: 1.2em;">40225026 김호윤</p>
+    <img src="images/Title-book.png" alt="책 이미지">
+    <h2>📖 INDEX 📖</h2>
+    <p class="small-text">아래의 책 제목을 클릭해 개별 페이지로 이동합니다</p><br>
+    <div class="menu">
+        <div class="book-grid">
+            <div class="book-item">
+                <img src="images/book1.jpg" alt="THE TYRANNY OF MERIT" class="book-img">
+                <button class="modern-font" onclick="goToPage('books/book1.html')">공정하다는 착각</button>
+            </div>
+            <div class="book-item">
+                <img src="images/book2.jpg" alt="THE SELFISH GENE" class="book-img">
+                <button class="modern-font" onclick="goToPage('books/book2.html')">이기적 유전자</button>
+            </div>
+            <div class="book-item">
+                <img src="images/book3.jpg" alt="FACTFULNESS" class="book-img">
+                <button class="modern-font" onclick="goToPage('books/book3.html')">팩트풀니스</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function goToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>

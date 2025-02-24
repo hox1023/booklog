@@ -1,0 +1,142 @@
+/* 다크 테마 스타일 */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1.2s ease-out forwards 0.5s;
+}
+
+/* 제목 스타일 */
+h1, h2 {
+    color: #BB86FC;
+}
+
+/* 책 정보 섹션 */
+.book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 책 표지 */
+.book-cover img {
+    width: 170px;
+    height: 252px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* 책 정보 텍스트 */
+.book-text {
+    text-align: center;
+}
+
+.author-text, .small-text {
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+/* 감상평 스타일 */
+.review-text {
+    background-color: #2C2C2C;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+/* AI 이미지 */
+.ai-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* 감정 분석 스타일 */
+.sentiment-analysis {
+    font-size: 14px;
+    color: #B0B0B0;
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 버튼 스타일 */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #BB86FC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #9D6FE6;
+}
+
+/* 페이드 인 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 요소가 아래에서 위로 슬라이드하며 나타나는 애니메이션 */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* 감상평 스타일 - 좌측 정렬 */
+.review-text {
+    background-color: #2C2C2C;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 1.6;
+    text-align: left; /* 좌측 정렬 */
+}
+
+/* AI 감정 평가 스타일 - 좌측 정렬 */
+.sentiment-analysis {
+    font-size: 14px;
+    color: #B0B0B0;
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left; /* 좌측 정렬 */
+}
